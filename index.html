@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка Нуралы</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4CAF50, #FFC107);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .header p {
+            font-size: 18px;
+            color: #666;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            max-width: 200px;
+            max-height: 200px;
+            border: 5px solid green;
+            margin-right: 20px;
+        }
+        .profile-data {
+            flex-grow: 1;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .nav {
+            background-color: #4CAF50;
+            border-radius: 10px;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #333;
+        }
+        section {
+            padding: 20px 0;
+        }
+        h2 {
+            font-size: 24px;
+            color: #4CAF50;
+            text-align: center;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 40px;
+        }
+        li {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a href="#video" style="color: red;">Видео</a></li>
+                <li><a href="#education" style="color: blue;">Образование</a></li>
+                <li><a href="#experience" style="color: purple;">Опыт работы</a></li>
+                <li><a href="#achievements" style="color: yellow;">Достижения</a></li>
+                <li><a href="#contact" style="color: maroon">Контакты</a></li>
+            </ul>
+        </div>
+        <header class="header">
+            <h1>Сайт-визитка</h1>
+        </header>
+        <div class="profile-info">
+            <img class="profile-pic" src="C:\Users\Nuraly\Downloads\rofl_photka.jpg" alt="енто я">
+            <div class="profile-data">
+                <p><strong>Имя:</strong> Жарылкасын Нуралы</p>
+                <p><strong>Краткое описание:</strong> Здравствуйте, меня зовут Нуралы, мне 17 лет, я учусь в колледже Astana IT University, на разработчика ПО, я увлекаюсь баскетболом, компьютерными играми и курсами по созданию скриптов для игр</p>
+            </div>
+        </div>
+        <section id="video">
+            <h2 style="color: red;"> Видео </h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="C:\Users\Nuraly\Downloads\ambience.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </section>
+
+        <section id="education">
+            <h2 style="color: blue;">Образование</h2>
+            <ul>
+                <li>КГУ Лицей №5 - Лисаковск - 5 класс</li>
+                <li>Высшая образовательная школа №30 - Усть Каменогорск - 9 класс</li>
+                <li>AITU College - Астана - 2 курс(now)</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2 style="color: purple;">Опыт работы</h2>
+            <ul>
+                <li>Не имеется, но думаю скоро будет</li>
+            </ul>
+        </section>
+        <section id="achievements">
+            <h2 style="color: yellow;">Достижения</h2>
+            <ul>
+                <li>Выиграл соревенования по плаванию, занял 6 медалей</li>
+                <li>Опубликована газета по изданию г. Лисаковск об победителях соревнований 2015 года</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2 style="color: maroon">Контакты</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
